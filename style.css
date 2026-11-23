@@ -18,6 +18,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* header */
 .head{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
 h1{font-family:var(--sans);font-weight:500;font-size:clamp(22px,2.4vw,32px);margin:0;letter-spacing:-.01em}
+.title-btn{font:inherit;color:inherit;letter-spacing:inherit;text-align:left;cursor:pointer}
+.title-btn:hover,.title-btn[aria-expanded=true]{color:var(--green)}
+.statement{font-family:var(--sans);font-size:clamp(15px,1.25vw,18px);line-height:1.5;max-width:760px;margin:14px 0 6px;padding-left:14px;border-left:2px solid var(--green)}
+.statement[hidden]{display:none}
 .titlerow{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px}
 .topics-btn{font-family:var(--sans);font-size:clamp(16px,1.7vw,22px);border:1.5px solid var(--green);padding:0 10px 1px;line-height:1.35}
 .topics-btn:hover,.topics-btn[aria-expanded=true]{background:var(--green);color:var(--bg)}

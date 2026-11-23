@@ -1,5 +1,5 @@
 {
-  "_about": "Global settings. 'repo' powers the [edit] links (owner/name). Topic ids (TX01…) are what every other file tags with. 'pos' = where the callout sits on the map, in % of the map area [x, y]. hideSections: sections to hide (texts, people, references, progress); remove a name to show it again.",
+  "_about": "Global settings. 'repo' powers the [edit] links (owner/name). Topic ids (TX01…) are what every other file tags with. 'pos' = where the callout sits on the map, in % of the map area [x, y]. hideSections: sections to hide (texts, people, references, progress); remove a name to show it again. statement: artist statement, shown when the title is clicked.",
   "title": "PRACTICE // PARAMETERS",
   "artist": "TANDIS",
   "repo": "silktabrizrug/practiceparameters",
@@ -93,5 +93,6 @@
       "pos": [90, 36]
     }
   ],
-  "hideSections": ["people", "references"]
+  "hideSections": ["people", "references"],
+  "statement": "My practice investigates the material and epistemic infrastructures of computation (supply chains of extraction, regimes of classification, and the encoding standards that govern which scripts can be written) as sites where colonial and capitalist relations are reproduced and rendered invisible. Drawing on critical infrastructure studies, media geology and decolonial theory, I develop research-based publications and visual essays that put these systems in conversation with knowledge traditions marginalized by Western technoscience, from jinn cosmology to the craft history of Arabic-script calligraphy. Treating worldbuilding, critical indexing and visualization as methods of inquiry rather than illustration, the work asks what becomes legible when infrastructure is narrated as inhabited ground, and how practices of refusal and commoning might reorganize the systems it describes."
 }

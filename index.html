@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' fill='none' stroke='%233358FF' stroke-width='2'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=refs2">
+<link rel="stylesheet" href="style.css?v=stmt1">
 <script>
   /* background: one of these, picked fresh on every load */
   (function () {
@@ -24,9 +24,10 @@
   <header class="head">
     <div class="head-left">
       <div class="titlerow">
-        <h1 id="title"># PRACTICE // PARAMETERS</h1>
+        <h1><button class="title-btn" id="title" aria-expanded="false" aria-controls="statement"># PRACTICE // PARAMETERS</button></h1>
         <button class="topics-btn" id="topicsBtn" aria-expanded="true" aria-controls="topicLegend">TOPICS<sup id="topicCount">5</sup></button>
       </div>
+      <p class="statement" id="statement" hidden></p>
       <ul class="topic-legend" id="topicLegend"></ul>
     </div>
     <pre class="config" id="config" aria-label="Status"></pre>
@@ -121,6 +122,6 @@
     <span class="tagline" id="tagline"></span>
   </footer>
 </main>
-<script src="app.js?v=refs2"></script>
+<script src="app.js?v=stmt1"></script>
 </body>
 </html>
