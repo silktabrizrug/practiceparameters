@@ -37,7 +37,7 @@
     const s = D.site;
     $('#title').textContent = `# ${s.title}`;
     $('#subtitle').textContent = s.subtitle;
-    $('#footer').textContent = s.footer;
+    $('#footer').textContent = s.footer || '';
     $('#tagline').textContent = s.tagline;
     $('#topicCount').textContent = s.topics.length;
     $('#topicLegend').innerHTML = s.topics.map((t, i) =>

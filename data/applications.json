@@ -457,6 +457,21 @@
         "TX05"
       ],
       "projects": []
+    },
+    {
+      "id": "undercurrents-fa26",
+      "name": "UNDERCURRENTS: student exhibition (Fall 2026)",
+      "type": "event",
+      "date": "2026-12-07",
+      "dateLabel": "Exhibition · opening",
+      "status": "going",
+      "where": null,
+      "money": null,
+      "link": null,
+      "source": null,
+      "notes": "My students' exhibition for this semester. Planning checklist in the Exhibition Protocol.",
+      "topics": [],
+      "projects": []
     }
   ]
 }
