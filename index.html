@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' fill='none' stroke='%233358FF' stroke-width='2'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=bg1">
+<link rel="stylesheet" href="style.css?v=drag2">
 <script>
   /* background: one of these, picked fresh on every load */
   (function () {
@@ -23,9 +23,8 @@
 
   <header class="head">
     <div class="head-left">
-      <h1 id="title"># PRACTICE // PARAMETERS</h1>
-      <div class="subrow">
-        <span id="subtitle">CERTAIN DEADLINES [VOL.1]</span>
+      <div class="titlerow">
+        <h1 id="title"># PRACTICE // PARAMETERS</h1>
         <button class="topics-btn" id="topicsBtn" aria-expanded="true" aria-controls="topicLegend">TOPICS<sup id="topicCount">5</sup></button>
       </div>
       <ul class="topic-legend" id="topicLegend"></ul>
@@ -39,7 +38,12 @@
     <div class="hub" id="hub">PROGRAM }<br>NO.∞</div>
     <div class="core-label">PRACTICE CORE</div>
     <div id="callouts"></div>
-    <p class="map-hint">click a topic or project to filter · keys 1–5 · esc to clear</p>
+    <p class="map-hint">drag nodes to rearrange · click to filter · keys 1–5 · esc to clear</p>
+    <div class="map-tools" id="mapTools" hidden>
+      <span>LAYOUT EDITED (this browser)</span>
+      <button id="copyPos">copy positions</button>
+      <button id="resetPos">reset</button>
+    </div>
   </section>
 
   <div class="lower">
@@ -117,6 +121,6 @@
     <span class="tagline" id="tagline"></span>
   </footer>
 </main>
-<script src="app.js?v=bg1"></script>
+<script src="app.js?v=drag2"></script>
 </body>
 </html>

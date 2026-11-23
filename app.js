@@ -36,7 +36,6 @@
   function renderHead() {
     const s = D.site;
     $('#title').textContent = `# ${s.title}`;
-    $('#subtitle').textContent = s.subtitle;
     $('#footer').textContent = s.footer || '';
     $('#tagline').textContent = s.tagline;
     $('#topicCount').textContent = s.topics.length;
@@ -70,9 +69,14 @@
   }
 
   /* ---------- map ---------- */
+  const POS_KEY = 'pp.positions.v1';
+  const loadPos = () => { try { return JSON.parse(localStorage.getItem(POS_KEY)) || {}; } catch (e) { return {}; } };
+  const savePos = (o) => { try { localStorage.setItem(POS_KEY, JSON.stringify(o)); } catch (e) { /* storage off */ } };
+  let saved = loadPos();
+  const withPos = (n) => ({ ...n, pos: saved[n.id] || n.pos });
   const nodes = () => [
-    ...D.projects.items.map((p) => ({ ...p, kind: 'px', label: `${p.key} · ${p.name}`, meta: p.state ? `state: ${p.state}` : 'state: [—]' })),
-    ...D.site.topics.map((t) => ({ ...t, kind: 'tx', label: t.name, meta: null })),
+    ...D.projects.items.map((p) => withPos({ ...p, kind: 'px', label: `${p.key} · ${p.name}`, meta: p.state ? `state: ${p.state}` : 'state: [—]' })),
+    ...D.site.topics.map((t) => withPos({ ...t, kind: 'tx', label: t.name, meta: null })),
   ];
 
   function renderMap() {
@@ -86,6 +90,70 @@
       </div>`;
     }).join('');
     drawWires();
+    updateTools();
+  }
+
+  /* drag nodes to rearrange the map (desktop); positions persist in this browser */
+  const isListMode = () => matchMedia('(max-width: 900px)').matches;
+  const round1 = (v) => Math.round(v * 10) / 10;
+  let suppressClick = false;
+  function enableDrag() {
+    const map = $('#map');
+    let drag = null, raf = 0;
+    map.addEventListener('pointerdown', (e) => {
+      const el = e.target.closest('.callout');
+      if (!el || isListMode() || e.button !== 0 || e.target.closest('a')) return;
+      const mr = map.getBoundingClientRect();
+      drag = { el, id: el.dataset.node, sx: e.clientX, sy: e.clientY, gx: e.clientX - mr.left - el.offsetLeft, gy: e.clientY - mr.top - el.offsetTop, moved: false, pid: e.pointerId };
+    });
+    window.addEventListener('pointermove', (e) => {
+      if (!drag || e.pointerId !== drag.pid) return;
+      if (!drag.moved && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) < 5) return;
+      if (!drag.moved) { drag.moved = true; drag.el.classList.add('dragging'); document.body.classList.add('is-dragging'); }
+      const mr = map.getBoundingClientRect();
+      const x = Math.max(0, Math.min(100, ((e.clientX - mr.left - drag.gx) / mr.width) * 100));
+      const y = Math.max(0, Math.min(100, ((e.clientY - mr.top - drag.gy) / mr.height) * 100));
+      drag.el.style.left = `${x}%`; drag.el.style.top = `${y}%`;
+      drag.pos = [round1(x), round1(y)];
+      cancelAnimationFrame(raf); raf = requestAnimationFrame(drawWires);
+    });
+    const end = (e) => {
+      if (!drag || (e && e.pointerId !== drag.pid)) return;
+      if (drag.moved) {
+        drag.el.classList.remove('dragging'); document.body.classList.remove('is-dragging');
+        saved = { ...saved, [drag.id]: drag.pos }; savePos(saved); updateTools();
+        suppressClick = true; setTimeout(() => { suppressClick = false; }, 0);
+      }
+      drag = null;
+    };
+    window.addEventListener('pointerup', end);
+    window.addEventListener('pointercancel', end);
+    // keyboard: shift + arrows nudge the focused node by 1%
+    map.addEventListener('keydown', (e) => {
+      const el = e.target.closest('.callout');
+      if (!el || !e.shiftKey || isListMode()) return;
+      const d = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key];
+      if (!d) return;
+      e.preventDefault();
+      const cur = nodes().find((n) => n.id === el.dataset.node).pos;
+      const pos = [round1(Math.max(0, Math.min(100, cur[0] + d[0]))), round1(Math.max(0, Math.min(100, cur[1] + d[1])))];
+      el.style.left = `${pos[0]}%`; el.style.top = `${pos[1]}%`;
+      saved = { ...saved, [el.dataset.node]: pos }; savePos(saved); drawWires(); updateTools();
+    });
+    $('#copyPos').addEventListener('click', async () => {
+      const out = {}; nodes().forEach((n) => { out[n.id] = n.pos; });
+      const text = JSON.stringify(out);
+      const btn = $('#copyPos');
+      try { await navigator.clipboard.writeText(text); btn.textContent = 'copied ✓'; }
+      catch (err) { window.prompt('Copy these positions:', text); }
+      setTimeout(() => { btn.textContent = 'copy positions'; }, 1600);
+    });
+    $('#resetPos').addEventListener('click', () => {
+      saved = {}; savePos(saved); renderMap();
+    });
+  }
+  function updateTools() {
+    const t = $('#mapTools'); if (t) t.hidden = Object.keys(saved).length === 0;
   }
 
   function drawWires() {
@@ -334,6 +402,7 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener('click', (e) => {
+      if (suppressClick) return;
       const b = e.target.closest('[data-focus]'); if (b) setFocus(b.dataset.focus);
     });
     $('#topicsBtn').addEventListener('click', (e) => {
@@ -356,7 +425,7 @@
 
   /* ---------- boot ---------- */
   load().then(() => {
-    renderHead(); renderMap(); renderNext(); renderExhibition(); renderProtocol(); renderRight(); renderTable(); bind(); startCore();
+    renderHead(); renderMap(); renderNext(); renderExhibition(); renderProtocol(); renderRight(); renderTable(); bind(); enableDrag(); startCore();
     if (location.hash.length > 1) setFocus(decodeURIComponent(location.hash.slice(1)));
     setInterval(tickConfig, 1000);
     document.fonts && document.fonts.ready.then(drawWires);

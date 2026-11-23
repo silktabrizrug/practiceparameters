@@ -63,3 +63,7 @@ This repo and site are **public**. Keep recommender names, rejections you'd rath
 ## Background colour
 
 On every load the page picks one of the colours in the `BG` list near the top of `index.html`. Edit that list to change them.
+
+## Rearranging the map
+
+Drag any node (or focus it and press Shift + arrow keys). The layout is saved in your browser only. To make it permanent for everyone, click **copy positions** (bottom-right of the map) and either paste the result to Claude or copy each `[x, y]` into the matching `pos` in `data/projects.json` (PX…) and `data/site.json` (TX…). **reset** goes back to the positions in the data files.
