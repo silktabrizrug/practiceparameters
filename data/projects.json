@@ -7,7 +7,7 @@
       "name": "Substrate",
       "state": "print layout",
       "next": null,
-      "topics": ["TX01", "TX04", "TX07", "TX09", "TX10", "TX14", "TX15", "TX11", "TX17"],
+      "topics": ["TX01", "TX04", "TX07", "TX09", "TX10", "TX14", "TX15", "TX11", "TX17", "TX06"],
       "pos": [24, 22],
       "link": "https://www.figma.com/design/tvTaOTUt4jGaCcNpSrOj9E/CAS---2026",
       "notes": "AI as a geological + political project: land, silicon, data centers, resistance, permacomputing. Print spreads (8×8)."
