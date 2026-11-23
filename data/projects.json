@@ -33,6 +33,17 @@
       "pos": [22, 72],
       "link": "https://www.figma.com/design/P5g0AQb450gYPY6ykYTzyX/Djinneology",
       "notes": "An index of jinn guarding the earth’s extraction sites: copper, cobalt, lithium, quartz, bauxite."
+    },
+    {
+      "id": "PX04",
+      "key": "D",
+      "name": "Index of the Unencoded",
+      "state": "concept",
+      "next": null,
+      "topics": ["TX05", "TX11", "TX12", "TX06", "TX08", "TX01", "TX03"],
+      "pos": [40, 82],
+      "link": null,
+      "notes": "An index of every character not (yet) encoded by Unicode: what is missing, for whom, and why. Kin to the volunteer-run Unencoded Unicode Characters Wiki and the Missing Scripts project; grows out of Stacking Scripts."
     }
   ]
 }
