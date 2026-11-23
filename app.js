@@ -218,7 +218,9 @@
     const labels = D.longterm.stepLabels;
     $('#protocol').innerHTML = D.longterm.items.map((it) => {
       const done = it.steps.filter(Boolean).length;
-      const dl = it.deadline ? `// ${it.deadline.replace(/-/g, '.')} ${tLabel(daysUntil(it.deadline))}` : '// [deadline]';
+      const dl = it.deadline
+        ? `// ${it.deadline.replace(/-/g, '.')} ${tLabel(daysUntil(it.deadline))}${it.deadlineNote ? ` · ${it.deadlineNote}` : ''}`
+        : `// ${it.deadlineNote || '[deadline]'}`;
       return `<li data-topics="${esc((it.topics || []).join(' '))}">
         <button aria-expanded="false">
           <span>${esc(it.school)}</span><span>= ${esc(it.program)}</span>

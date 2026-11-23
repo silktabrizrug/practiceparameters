@@ -6,14 +6,14 @@
   --sans:"Space Grotesk", system-ui, sans-serif;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--paper);color:var(--ink)}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
 body{font-family:var(--mono);font-size:12px;line-height:1.45;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--green);outline-offset:2px}
 .muted{color:var(--muted)}
 
-.sheet{position:relative;max-width:1440px;margin:24px auto;padding:40px 48px 32px;background:var(--bg);border-radius:24px;overflow:hidden}
+.sheet{position:relative;max-width:1440px;margin:0 auto;padding:40px 64px 32px 48px;background:var(--bg)}
 
 /* header */
 .head{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
@@ -88,7 +88,7 @@ h2{font-family:var(--mono);font-weight:400;font-size:12px;margin:0;color:var(--i
 
 /* protocol */
 .protocol{list-style:none;margin:0;padding:0}
-.protocol li>button{display:grid;grid-template-columns:14ch 22ch 1fr auto;gap:10px;width:100%;text-align:left;padding:3px 0;font-size:11px}
+.protocol li>button{display:grid;grid-template-columns:14ch 27ch 1fr auto;gap:10px;width:100%;text-align:left;padding:3px 0;font-size:11px}
 .protocol li>button:hover{color:var(--green)}
 .steps{display:flex;gap:3px;align-items:center}
 .steps i{width:9px;height:9px;border:1px solid var(--ink);display:inline-block}
@@ -139,13 +139,13 @@ tr.past{color:var(--faint)}
 
 /* footer */
 .foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:12px;font-family:var(--sans);font-size:15px}
-.tagline{position:absolute;right:16px;top:300px;writing-mode:vertical-rl;font-family:var(--sans);font-size:clamp(14px,1.4vw,20px);color:var(--ink);white-space:nowrap}
+.tagline{position:fixed;right:18px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:var(--sans);font-size:clamp(14px,1.4vw,20px);color:var(--ink);white-space:nowrap}
 
 @media (max-width:1100px){
   .tagline{display:none}
 }
 @media (max-width:900px){
-  .sheet{margin:0;border-radius:0;padding:24px 18px}
+  .sheet{padding:24px 18px}
   .head{flex-direction:column}
   .config{text-align:left}
   .hub{top:2%}
