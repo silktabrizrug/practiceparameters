@@ -1,0 +1,9 @@
+{
+  "_about": "References / inspiration. image: a file in assets/refs/ (optional). link: the source post or page.",
+  "items": [
+    { "id": "ref-01", "title": "[REFERENCE]", "image": null, "link": null, "topics": [] },
+    { "id": "ref-02", "title": "[REFERENCE]", "image": null, "link": null, "topics": [] },
+    { "id": "ref-03", "title": "[REFERENCE]", "image": null, "link": null, "topics": [] },
+    { "id": "ref-04", "title": "[REFERENCE]", "image": null, "link": null, "topics": [] }
+  ]
+}

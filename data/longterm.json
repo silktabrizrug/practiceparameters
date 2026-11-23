@@ -1,0 +1,10 @@
+{
+  "_about": "Long-term applications (MFA / PhD). steps: each true/false. deadline: YYYY-MM-DD or null. Keep recommender names out of this public file.",
+  "stepLabels": ["materials", "recommenders", "submitted", "interview", "decision"],
+  "items": [
+    { "id": "cornell-mfa",       "school": "CORNELL",      "program": "MFA IMAGE + TEXT",      "deadline": null, "link": null, "topics": [], "steps": [false, false, false, false, false], "notes": null },
+    { "id": "hfbk-phd",          "school": "HFBK HAMBURG", "program": "PHD ART PRACTICE",      "deadline": null, "link": null, "topics": [], "steps": [false, false, false, false, false], "notes": null },
+    { "id": "hfbk-mfa",          "school": "HFBK HAMBURG", "program": "MFA",                   "deadline": null, "link": null, "topics": [], "steps": [false, false, false, false, false], "notes": null },
+    { "id": "binational-phd",    "school": "BINATIONAL",   "program": "ARTISTIC PHD PROGRAM",  "deadline": null, "link": null, "topics": [], "steps": [false, false, false, false, false], "notes": null }
+  ]
+}

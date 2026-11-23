@@ -1,0 +1,10 @@
+{
+  "_about": "Important texts (5–10). Cover image: add the file to assets/covers/ and set cover to its path, e.g. \"assets/covers/text-01.jpg\". Without one, a placeholder cover is drawn.",
+  "items": [
+    { "id": "text-01", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": "Why this text matters, and to which project.", "topics": [], "projects": [] },
+    { "id": "text-02", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] },
+    { "id": "text-03", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] },
+    { "id": "text-04", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] },
+    { "id": "text-05", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] }
+  ]
+}

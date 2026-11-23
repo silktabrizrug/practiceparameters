@@ -1,0 +1,8 @@
+{
+  "_about": "Active projects. state: idea | researching | producing | editing | showing | paused. topics: which TX ids this project touches (draws the lines on the map). pos = callout position on the map in % [x, y].",
+  "items": [
+    { "id": "PX01", "key": "A", "name": "Substrate",        "state": null, "next": null, "topics": [], "pos": [24, 22], "link": null, "notes": null },
+    { "id": "PX02", "key": "B", "name": "Stacking Scripts", "state": null, "next": null, "topics": [], "pos": [62, 26], "link": null, "notes": null },
+    { "id": "PX03", "key": "C", "name": "Djinneology",      "state": null, "next": null, "topics": [], "pos": [30, 70], "link": null, "notes": null }
+  ]
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice // Parameters</title>
+<meta name="description" content="A live dashboard of an artistic practice: projects, topics, deadlines, texts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' fill='none' stroke='%233E8E5A' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sheet" id="sheet">
+
+  <header class="head">
+    <div class="head-left">
+      <h1 id="title"># PRACTICE // PARAMETERS</h1>
+      <div class="subrow">
+        <span id="subtitle">CERTAIN DEADLINES [VOL.1]</span>
+        <button class="topics-btn" id="topicsBtn" aria-expanded="true" aria-controls="topicLegend">TOPICS<sup id="topicCount">5</sup></button>
+      </div>
+      <ul class="topic-legend" id="topicLegend"></ul>
+    </div>
+    <pre class="config" id="config" aria-label="Status"></pre>
+  </header>
+
+  <section class="map" id="map" aria-label="Map of projects and topics">
+    <canvas id="core" aria-hidden="true"></canvas>
+    <svg id="wires" aria-hidden="true"></svg>
+    <div class="hub" id="hub">PROGRAM }<br>NO.∞</div>
+    <div class="core-label">PRACTICE CORE</div>
+    <div id="callouts"></div>
+    <p class="map-hint">click a topic or project to filter · keys 1–5 · esc to clear</p>
+  </section>
+
+  <div class="lower">
+    <div class="col-left">
+
+      <section class="block" id="short" aria-labelledby="shortH">
+        <div class="block-head">
+          <h2 id="shortH"><span class="brace">{</span><br>&nbsp;&nbsp;[CORE PARAMETERS] <span class="muted">// SHORT-TERM</span></h2>
+          <div class="tabs" role="tablist" aria-label="Type">
+            <button role="tab" data-type="application" aria-selected="true">APPLICATIONS</button>
+            <button role="tab" data-type="event" aria-selected="false">EVENTS</button>
+            <button role="tab" data-type="all" aria-selected="false">ALL</button>
+          </div>
+          <a class="edit" data-file="applications.json">[edit]</a>
+        </div>
+        <ol class="next" id="next"></ol>
+        <button class="more" id="moreBtn" aria-expanded="false" aria-controls="allParams"></button>
+      </section>
+
+      <section class="block" id="long" aria-labelledby="longH">
+        <div class="block-head">
+          <h2 id="longH">[LONG-TERM PROTOCOL]</h2>
+          <a class="edit" data-file="longterm.json">[edit]</a>
+        </div>
+        <ul class="protocol" id="protocol"></ul>
+        <div class="brace">}</div>
+      </section>
+
+    </div>
+
+    <aside class="col-right">
+      <section class="block" aria-labelledby="progH">
+        <div class="block-head"><h2 id="progH">[PROGRESS]</h2><a class="edit" data-file="progress.json">[edit]</a></div>
+        <ul class="progress" id="progress"></ul>
+      </section>
+      <section class="block" aria-labelledby="textsH">
+        <div class="block-head"><h2 id="textsH">[TEXTS]</h2><a class="edit" data-file="texts.json">[edit]</a></div>
+        <ul class="texts" id="texts"></ul>
+        <p class="why" id="why" aria-live="polite"></p>
+      </section>
+      <section class="block" aria-labelledby="peopleH">
+        <div class="block-head"><h2 id="peopleH">[PEOPLE]</h2><a class="edit" data-file="people.json">[edit]</a></div>
+        <ul class="people" id="people"></ul>
+      </section>
+      <section class="block" aria-labelledby="refsH">
+        <div class="block-head"><h2 id="refsH">[REFERENCES]</h2><a class="edit" data-file="references.json">[edit]</a></div>
+        <ul class="refs" id="refs"></ul>
+      </section>
+    </aside>
+  </div>
+
+  <section class="all" id="allParams" hidden aria-labelledby="allH">
+    <div class="block-head">
+      <h2 id="allH">[ALL PARAMETERS]</h2>
+      <label class="check"><input type="checkbox" id="showPast"> show past</label>
+    </div>
+    <div class="table-wrap">
+      <table id="allTable">
+        <thead><tr><th>DATE</th><th>T</th><th>NAME</th><th>TYPE</th><th>WHERE</th><th>STATUS</th><th>TOPICS</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span id="footer">Powered by the studio</span>
+    <span class="tagline" id="tagline"></span>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

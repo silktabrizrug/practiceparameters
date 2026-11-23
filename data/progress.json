@@ -1,0 +1,9 @@
+{
+  "_about": "Current progress. kind: TEACH | LEARN | DEGREE. progress: 0–100 or null.",
+  "items": [
+    { "id": "cooper-dataviz-ta", "kind": "TEACH",  "name": "TA, DATA VIS",       "where": "COOPER",    "progress": null, "topics": ["TX03"] },
+    { "id": "parsons-course",    "kind": "LEARN",  "name": "PARSONS COURSE",     "where": "PARSONS",   "progress": null, "topics": [] },
+    { "id": "cooper-type",       "kind": "LEARN",  "name": "TYPE",               "where": "COOPER",    "progress": null, "topics": ["TX05"] },
+    { "id": "suny-poly-ms",      "kind": "DEGREE", "name": "MS INFO DESIGN",     "where": "SUNY POLY", "progress": null, "topics": ["TX03"] }
+  ]
+}

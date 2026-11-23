@@ -1,0 +1,8 @@
+{
+  "_about": "People in your orbit. This file is PUBLIC: use public roles/handles only, no private notes or who is writing which recommendation.",
+  "items": [
+    { "id": "p1", "name": "[MENTOR]",       "role": "MENTOR",       "link": null, "topics": [] },
+    { "id": "p2", "name": "[CURATOR]",      "role": "CURATOR",      "link": null, "topics": [] },
+    { "id": "p3", "name": "[COLLABORATOR]", "role": "COLLABORATOR", "link": null, "topics": [] }
+  ]
+}

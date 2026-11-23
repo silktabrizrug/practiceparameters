@@ -1,0 +1,462 @@
+{
+  "_about": "Short-term applications + events. Synced from the Applications & Events Tracker. status: to-review | interested | applying | submitted | going | accepted | rejected | missed | not-for-me. date: YYYY-MM-DD or null.",
+  "updated": "2026-11-23",
+  "items": [
+    {
+      "id": "study-corps-nyc-2027",
+      "name": "Study Corps NYC (Spring 2027)",
+      "type": "application",
+      "date": "2026-11-22",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": "NYC",
+      "money": "Paid role",
+      "link": "https://www.instagram.com/schoolofattention/",
+      "source": "@schoolofattention",
+      "notes": "SoRA's team of organizers, researchers and facilitators for 'attention activism.'",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "data-workers-united-launch",
+      "name": "Data Workers United launch",
+      "type": "event",
+      "date": "2026-11-26",
+      "dateLabel": "Event",
+      "status": "to-review",
+      "where": "Online",
+      "money": null,
+      "link": "https://dataworkersunited.org",
+      "source": "dataworkersunited.org",
+      "notes": "Launch of their initiatives and plans.",
+      "topics": [
+        "TX01",
+        "TX03"
+      ],
+      "projects": []
+    },
+    {
+      "id": "kunsthalle-dortmund-lectures",
+      "name": "From Web, Library, War to Fire, Garden, Feed: lectures",
+      "type": "event",
+      "date": "2026-11-27",
+      "dateLabel": "Event · 19:00",
+      "status": "to-review",
+      "where": "Kunsthalle Dortmund, DE",
+      "money": null,
+      "link": "https://www.instagram.com/netzkunst.berlin/",
+      "source": "@netzkunst.berlin",
+      "notes": "Performative lectures on how metaphors shape our idea of the internet.",
+      "topics": [
+        "TX01",
+        "TX05"
+      ],
+      "projects": []
+    },
+    {
+      "id": "smack-mellon-2027",
+      "name": "Smack Mellon Artist Studio Program 2027–28",
+      "type": "application",
+      "date": "2026-12-01",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": "Dumbo, Brooklyn",
+      "money": "Free studio, 11 months",
+      "link": "https://www.instagram.com/pformart/",
+      "source": "@pformart",
+      "notes": "6 emerging/early-career artists, Sept 2027 – Aug 2028. NYC resident, US citizen/LPR, 18+.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "softer-nyc",
+      "name": "SOFTER NYC",
+      "type": "event",
+      "date": "2026-12-01",
+      "dateLabel": "Event · 6–8pm",
+      "status": "to-review",
+      "where": "Metalabel HQ, Chinatown",
+      "money": "Tickets",
+      "link": "https://www.instagram.com/softer.global/",
+      "source": "@softer.global",
+      "notes": "DIY hardware / softer software evening.",
+      "topics": [
+        "TX01"
+      ],
+      "projects": []
+    },
+    {
+      "id": "mono-no-aware-xx",
+      "name": "MONO NO AWARE XX",
+      "type": "event",
+      "date": "2026-12-02",
+      "dateLabel": "Event · 18 nights",
+      "status": "to-review",
+      "where": "BAM, Brooklyn",
+      "money": "Free, RSVP",
+      "link": "https://www.instagram.com/mononoawarefilm/",
+      "source": "@mononoawarefilm",
+      "notes": "Cinema arts: projection performance, installation, sculpture.",
+      "topics": [
+        "TX04"
+      ],
+      "projects": []
+    },
+    {
+      "id": "ny-arabic-chorus",
+      "name": "NY Arabic Chorus (Brooklyn Maqam)",
+      "type": "event",
+      "date": "2026-12-05",
+      "dateLabel": "Event · 7pm",
+      "status": "to-review",
+      "where": "First Unitarian, Brooklyn Heights",
+      "money": "$25",
+      "link": "https://www.instagram.com/brooklynmaqam/",
+      "source": "@brooklynmaqam",
+      "notes": "37 voices + violin, oud, ney, bass.",
+      "topics": [
+        "TX05"
+      ],
+      "projects": []
+    },
+    {
+      "id": "open-data-week-2027",
+      "name": "Open Data Week 2027 + School of Data proposals",
+      "type": "application",
+      "date": "2026-12-06",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": "NYC",
+      "money": null,
+      "link": "https://opendataweek.nyc",
+      "source": "opendataweek.nyc",
+      "notes": "BetaNYC. Submit session proposals.",
+      "topics": [
+        "TX01",
+        "TX03"
+      ],
+      "projects": []
+    },
+    {
+      "id": "press-play-2026",
+      "name": "Press Play fair",
+      "type": "event",
+      "date": "2026-12-12",
+      "dateLabel": "Event · Dec 12–13",
+      "status": "to-review",
+      "where": "Pioneer Works, Red Hook",
+      "money": null,
+      "link": "https://www.instagram.com/pioneerworks/",
+      "source": "@pioneerworks",
+      "notes": "Books, publishers, records, ephemera; talks and readings.",
+      "topics": [
+        "TX05"
+      ],
+      "projects": []
+    },
+    {
+      "id": "yeh-gallery-talk",
+      "name": "Artist talk at Yeh Art Gallery",
+      "type": "event",
+      "date": "2026-12-12",
+      "dateLabel": "Event · 2–4pm",
+      "status": "to-review",
+      "where": "St. John's University, Queens",
+      "money": null,
+      "link": "https://www.instagram.com/u_mbr0/",
+      "source": "@u_mbr0",
+      "notes": "Conversation with the exhibiting artists.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "mozilla-fellows-2027",
+      "name": "Mozilla Fellows 2027–28",
+      "type": "application",
+      "date": "2026-12-17",
+      "dateLabel": "Letter of intent",
+      "status": "to-review",
+      "where": "Global / remote",
+      "money": "Up to $125K / 12 mo",
+      "link": "https://www.instagram.com/mozillafoundation/",
+      "source": "@mozillafoundation",
+      "notes": "AI, neurotech, quantum, security, future of the web.",
+      "topics": [
+        "TX01"
+      ],
+      "projects": []
+    },
+    {
+      "id": "watermill-summer-2027",
+      "name": "Watermill International Summer Program 2027",
+      "type": "application",
+      "date": "2026-12-22",
+      "dateLabel": "Deadline · opens Dec 2",
+      "status": "to-review",
+      "where": "Water Mill, NY",
+      "money": null,
+      "link": "https://www.instagram.com/watermillcenter/",
+      "source": "@watermillcenter",
+      "notes": "Program Jul 12 – Aug 7, 2027.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "nyfa-fellowship-2027",
+      "name": "NYSCA/NYFA Artist Fellowship",
+      "type": "application",
+      "date": "2027-01-12",
+      "dateLabel": "Deadline · 5pm",
+      "status": "to-review",
+      "where": "New York State",
+      "money": "$8K unrestricted",
+      "link": "https://www.nyfa.org",
+      "source": "nyfa.org",
+      "notes": "Ages 25+, NYS resident 2+ years. Free to apply.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "watermill-residency-2028",
+      "name": "Watermill Artist Residency 2028",
+      "type": "application",
+      "date": "2027-02-10",
+      "dateLabel": "Deadline · opens Jan 6",
+      "status": "to-review",
+      "where": "Water Mill, NY",
+      "money": null,
+      "link": "https://www.instagram.com/watermillcenter/",
+      "source": "@watermillcenter",
+      "notes": "Process-based, any discipline.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "silver-lake-shorts-sva",
+      "name": "Silver Lake Shorts at SVA (Titmouse)",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": "SVA Theatre, Chelsea",
+      "money": null,
+      "link": "https://www.instagram.com/titmouseinc/",
+      "source": "@titmouseinc",
+      "notes": "Shorts 2–7 min, tri-state artists. Screening Feb 5, 2027.",
+      "topics": [
+        "TX04"
+      ],
+      "projects": []
+    },
+    {
+      "id": "cpdp-2027-iomu",
+      "name": "CPDP 2027: collaborator with Institute of Machine Unlearning",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": "Brussels · Mar 8–11, 2027",
+      "money": "Travel + lodging covered",
+      "link": "https://www.instagram.com/instituteofmachineunlearning/",
+      "source": "@instituteofmachineunlearning",
+      "notes": "Co-develop participatory actions.",
+      "topics": [
+        "TX01",
+        "TX05"
+      ],
+      "projects": []
+    },
+    {
+      "id": "goldsmiths-mres-art",
+      "name": "Goldsmiths Master of Research in Art",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": "London",
+      "money": null,
+      "link": "https://www.instagram.com/artresearchgold/",
+      "source": "@artresearchgold",
+      "notes": "Starts Sept 2027. FT 1 yr / PT 2 yrs.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "mta-lirr-2027",
+      "name": "MTA Arts & Design: LIRR Bellerose + Floral Park",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": "Nassau County, NY",
+      "money": "$1,250 finalist honorarium",
+      "link": "https://www.instagram.com/mtaartsdesign/",
+      "source": "@mtaartsdesign",
+      "notes": "Public art in mosaic and/or metal.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "artd-faculty-2027",
+      "name": "Faculty job: generative / AI art & design",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": "Institution TBD",
+      "money": null,
+      "link": "https://www.instagram.com/newmediacaucus/",
+      "source": "@newmediacaucus",
+      "notes": "Tenure-track. Start Aug 1, 2027.",
+      "topics": [
+        "TX03"
+      ],
+      "projects": []
+    },
+    {
+      "id": "sit-code-phd",
+      "name": "SIT-code lab PhD positions",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": null,
+      "money": null,
+      "link": "https://sit-code.com/open-positions/",
+      "source": "sit-code.com",
+      "notes": "Open PhD positions.",
+      "topics": [
+        "TX01"
+      ],
+      "projects": []
+    },
+    {
+      "id": "fellowship-roundup-tribaja",
+      "name": "Fellowship roundup: Morgridge MAP, EDSAFE AI, State of Black Entrepreneurship",
+      "type": "application",
+      "date": null,
+      "dateLabel": "Deadline not in post",
+      "status": "to-review",
+      "where": null,
+      "money": "Stipends up to $100K",
+      "link": "https://www.instagram.com/tribaja.co/",
+      "source": "@tribaja.co",
+      "notes": "Roundup of 2027 fellowships.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "mozilla-incubator-2026",
+      "name": "Mozilla Human-Scale AI Incubator",
+      "type": "application",
+      "date": "2026-11-20",
+      "dateLabel": "Deadline",
+      "status": "missed",
+      "where": "Global",
+      "money": "Up to $500K / 2 yrs",
+      "link": "https://www.instagram.com/mozillafoundation/",
+      "source": "@mozillafoundation",
+      "notes": "Watch for next round.",
+      "topics": [
+        "TX01"
+      ],
+      "projects": []
+    },
+    {
+      "id": "dataxdesign-2026",
+      "name": "Data x Design exhibition proposals",
+      "type": "application",
+      "date": "2026-11-19",
+      "dateLabel": "Deadline",
+      "status": "missed",
+      "where": "NYC",
+      "money": null,
+      "link": "https://www.instagram.com/dataxdesign/",
+      "source": "@dataxdesign",
+      "notes": "Annual: watch for the 2027 call.",
+      "topics": [
+        "TX03"
+      ],
+      "projects": []
+    },
+    {
+      "id": "sfpc-play-pedagogy",
+      "name": "SFPC: Play and Pedagogy",
+      "type": "application",
+      "date": "2026-11-16",
+      "dateLabel": "Deadline",
+      "status": "missed",
+      "where": "Online",
+      "money": "Scholarships",
+      "link": "https://www.instagram.com/sfpc.study/",
+      "source": "@sfpc.study",
+      "notes": "10-class course.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "lmcc-2027",
+      "name": "LMCC Manhattan Arts Grants + SU-CASA 2027",
+      "type": "application",
+      "date": "2026-11-12",
+      "dateLabel": "Deadline · 6pm",
+      "status": "missed",
+      "where": "Manhattan",
+      "money": "Grants",
+      "link": "https://www.instagram.com/lmcc_nyc/",
+      "source": "@lmcc_nyc",
+      "notes": "Annual: watch LMCC.net/apply.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "bergen-compost-to-code",
+      "name": "Bergen Assembly: From Compost to Code",
+      "type": "event",
+      "date": "2026-11-21",
+      "dateLabel": "Event",
+      "status": "missed",
+      "where": "Bergen, NO",
+      "money": null,
+      "link": null,
+      "source": null,
+      "notes": "Seminar on radical computing.",
+      "topics": [
+        "TX01"
+      ],
+      "projects": []
+    },
+    {
+      "id": "hikma-reading-room",
+      "name": "HIKMA Iraq–Iran reading room",
+      "type": "event",
+      "date": "2026-11-21",
+      "dateLabel": "Event",
+      "status": "missed",
+      "where": "Paris",
+      "money": null,
+      "link": "https://www.instagram.com/hikmairaq/",
+      "source": "@hikmairaq",
+      "notes": null,
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "wordhack-nov",
+      "name": "WordHack",
+      "type": "event",
+      "date": "2026-11-19",
+      "dateLabel": "Event",
+      "status": "missed",
+      "where": "Wonderville, Brooklyn",
+      "money": "$15",
+      "link": null,
+      "source": null,
+      "notes": "Language + technology night.",
+      "topics": [
+        "TX05"
+      ],
+      "projects": []
+    }
+  ]
+}
