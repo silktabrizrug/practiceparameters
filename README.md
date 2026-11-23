@@ -55,3 +55,7 @@ python3 -m http.server
 ## Note
 
 This repo and site are **public**. Keep recommender names, rejections you'd rather not share, and private notes out of these files.
+
+## Cache-busting
+
+`index.html` loads `style.css?v=…` and `app.js?v=…`. Bump the `v=` value whenever either file changes, or browsers may keep the old one for up to 10 minutes. Data files are always fetched fresh.
