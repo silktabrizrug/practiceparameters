@@ -1,6 +1,12 @@
 {
   "_about": "Long-term applications (MFA / PhD). deadline: YYYY-MM-DD or null. opens: when the application window opens (optional). deadlineNote: shown when there is no fixed deadline. steps: true/false for each stepLabel. Keep recommender names out of this public file. Checked 2026-11-23.",
-  "stepLabels": ["materials", "recommenders", "submitted", "interview", "decision"],
+  "stepLabels": [
+    "materials",
+    "recommenders",
+    "submitted",
+    "interview",
+    "decision"
+  ],
   "items": [
     {
       "id": "cornell-mfa",
@@ -11,7 +17,13 @@
       "deadlineNote": "priority deadline",
       "link": "https://aap.cornell.edu/admissions/graduate/art",
       "topics": [],
-      "steps": [false, false, false, false, false],
+      "steps": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
       "notes": "Low-residency, 25 months; starts with a summer session in Ithaca. Apply via ApplyWeb + portfolio on Slideroom; 2 letters of recommendation; no GRE. Shortlisted applicants are interviewed."
     },
     {
@@ -23,7 +35,13 @@
       "deadlineNote": "SS2027 window closed Oct 14, 2026 · next ≈ Sep–Oct 2027 (unconfirmed)",
       "link": "https://hfbk-hamburg.de/en/information/prospective-students/apply",
       "topics": [],
-      "steps": [false, false, false, false, false],
+      "steps": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
       "notes": "Admits for the summer semester only. The 2027 intake window ran Sep 1 – Oct 14, 2026. Confirm the next window on HFBK's site."
     },
     {
@@ -35,7 +53,13 @@
       "deadlineNote": "4 p.m. · opens Feb 4",
       "link": "https://hfbk-hamburg.de/en/information/prospective-students/apply/application-master-fine-arts",
       "topics": [],
-      "steps": [false, false, false, false, false],
+      "steps": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
       "notes": "Winter semester 2027/28 start. Entrance committee judges submitted work for an 'independent artistic position'. Decisions by mid-June. No tuition (semester fee only)."
     },
     {
@@ -47,8 +71,50 @@
       "deadlineNote": "rolling, no fixed deadline",
       "link": "https://artisticphd-hfkbremen.net/program/admissions",
       "topics": [],
-      "steps": [false, false, false, false, false],
+      "steps": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
       "notes": "HfK Bremen with Leiden/KABK, Groningen/Minerva and Gothenburg/HDK-Valand. Upload a 2-page pre-proposal + bibliography, CV, portfolio and proof of MA at application.hfk-bremen.de; name a preferred supervisor. Pre-acceptance leads to an interview."
+    },
+    {
+      "id": "princeton-arts-fellowship",
+      "school": "PRINCETON",
+      "program": "ARTS FELLOWSHIP (2 YRS)",
+      "deadline": null,
+      "opens": null,
+      "deadlineNote": "2027 cycle closed Sep 8, 2026 · next opens ≈ Jul 2027, due ≈ early Sep 2027 (est.)",
+      "link": "https://arts.princeton.edu/fellowships/princeton-arts-fellowship/",
+      "topics": [],
+      "steps": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "notes": "Lewis Center for the Arts. Two years of teaching + own work, $93K/yr. Can't hold concurrent teaching elsewhere; can't fund work toward a degree."
+    },
+    {
+      "id": "princeton-hodder",
+      "school": "PRINCETON",
+      "program": "HODDER FELLOWSHIP (10 MO)",
+      "deadline": null,
+      "opens": null,
+      "deadlineNote": "2027 cycle closed Sep 8, 2026 · next opens ≈ Jul 2027, due ≈ early Sep 2027 (est.)",
+      "link": "https://arts.princeton.edu/fellowships/",
+      "topics": [],
+      "steps": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "notes": "Independent project, no teaching, $93K for 10 months. Can't hold concurrent teaching elsewhere; can't fund work toward a degree."
     }
   ]
 }
