@@ -1,10 +1,209 @@
 {
-  "_about": "Important texts (5–10). Cover image: add the file to assets/covers/ and set cover to its path, e.g. \"assets/covers/text-01.jpg\". Without one, a placeholder cover is drawn.",
+  "_about": "Texts, as an APA 7 reference list (alphabetical). apa: the full reference; wrap titles in *asterisks* for italics. projects / topics: tags used by the map filter. Sources: Stacking Scripts prospectus bibliography + Jinneology Index preliminary bibliography.",
   "items": [
-    { "id": "text-01", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": "Why this text matters, and to which project.", "topics": [], "projects": [] },
-    { "id": "text-02", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] },
-    { "id": "text-03", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] },
-    { "id": "text-04", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] },
-    { "id": "text-05", "title": "[TITLE]", "author": "[AUTHOR]", "year": null, "cover": null, "why": null, "topics": [], "projects": [] }
+    {
+      "id": "ref-01",
+      "apa": "Agarwal, D., Naaman, M., & Vashistha, A. (2025). AI suggestions homogenize writing toward Western styles and diminish cultural nuances. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3706598.3713564",
+      "projects": ["PX02"],
+      "topics": ["TX10", "TX05"]
+    },
+    {
+      "id": "ref-02",
+      "apa": "Benjamin, W. (1969). The work of art in the age of mechanical reproduction (H. Zohn, Trans.). In H. Arendt (Ed.), *Illuminations* (pp. 217–251). Schocken Books. (Original work published 1935)",
+      "projects": ["PX02"],
+      "topics": ["TX12"]
+    },
+    {
+      "id": "ref-03",
+      "apa": "Blum, A. (2012). *Tubes: A journey to the center of the Internet*. Ecco.",
+      "projects": ["PX03"],
+      "topics": ["TX01", "TX09"]
+    },
+    {
+      "id": "ref-04",
+      "apa": "Crawford, K. (2021). *Atlas of AI: Power, politics, and the planetary costs of artificial intelligence*. Yale University Press.",
+      "projects": ["PX03"],
+      "topics": ["TX10", "TX07", "TX09"]
+    },
+    {
+      "id": "ref-05",
+      "apa": "DiSalvo, C. (2012). *Adversarial design*. MIT Press.",
+      "projects": ["PX03"],
+      "topics": ["TX14"]
+    },
+    {
+      "id": "ref-06",
+      "apa": "Dunne, A. (2005). *Hertzian tales: Electronic products, aesthetic experience, and critical design*. MIT Press.",
+      "projects": ["PX03"],
+      "topics": ["TX13", "TX01"]
+    },
+    {
+      "id": "ref-07",
+      "apa": "Dunne, A., & Raby, F. (2013). *Speculative everything: Design, fiction, and social dreaming*. MIT Press.",
+      "projects": ["PX03"],
+      "topics": ["TX13"]
+    },
+    {
+      "id": "ref-08",
+      "apa": "Faruki, M. (2017). *Intake facility for an anonymous client* [Architectural project].",
+      "projects": ["PX03"],
+      "topics": ["TX13"]
+    },
+    {
+      "id": "ref-09",
+      "apa": "Ghosn, R., & Jazairy, E. H. (2016). *After oil*.",
+      "projects": ["PX03"],
+      "topics": ["TX13", "TX07"]
+    },
+    {
+      "id": "ref-10",
+      "apa": "Gómez-Barris, M. (2017). *The extractive zone: Social ecologies and decolonial perspectives*. Duke University Press.",
+      "projects": ["PX03"],
+      "topics": ["TX07", "TX08"]
+    },
+    {
+      "id": "ref-11",
+      "apa": "Green, N. (2010). Stones from Bavaria: Iranian lithography in its global contexts. *Iranian Studies, 43*(3), 305–331.",
+      "projects": ["PX02"],
+      "topics": ["TX12"]
+    },
+    {
+      "id": "ref-12",
+      "apa": "Halberstam, J. (2011). *The queer art of failure*. Duke University Press.",
+      "projects": ["PX03"],
+      "topics": ["TX14", "TX11"]
+    },
+    {
+      "id": "ref-13",
+      "apa": "Kara, S. (2023). *Cobalt red: How the blood of the Congo powers our lives*. St. Martin's Press.",
+      "projects": ["PX03"],
+      "topics": ["TX07"]
+    },
+    {
+      "id": "ref-14",
+      "apa": "Khan, G. M. (2001). *Arabic script: Styles, variants, and calligraphic adaptations*. Abbeville Press.",
+      "projects": ["PX02"],
+      "topics": ["TX12"]
+    },
+    {
+      "id": "ref-15",
+      "apa": "Kohari, A. (2021, February 9). How to bring a language to the future. *Rest of World*.",
+      "projects": ["PX02"],
+      "topics": ["TX05", "TX12"]
+    },
+    {
+      "id": "ref-16",
+      "apa": "Kwet, M. (2019). Digital colonialism: US empire and the new imperialism in the Global South. *Race & Class, 60*(4), 3–26.",
+      "projects": ["PX02"],
+      "topics": ["TX08", "TX01"]
+    },
+    {
+      "id": "ref-17",
+      "apa": "Liboiron, M. (2021). *Pollution is colonialism*. Duke University Press.",
+      "projects": ["PX03"],
+      "topics": ["TX08", "TX07"]
+    },
+    {
+      "id": "ref-18",
+      "apa": "Liu, L. H., & Rao, A. (Eds.), with Silverman, C. A. (2023). *Global language justice*. Columbia University Press.",
+      "projects": ["PX02"],
+      "topics": ["TX05"]
+    },
+    {
+      "id": "ref-19",
+      "apa": "Meindertsma, C., & Joliat, J. (2006). *PIG 05049*.",
+      "projects": ["PX03"],
+      "topics": ["TX03", "TX07"]
+    },
+    {
+      "id": "ref-20",
+      "apa": "Mogel, L. (2018). *Walking the watershed*.",
+      "projects": ["PX03"],
+      "topics": ["TX03", "TX01"]
+    },
+    {
+      "id": "ref-21",
+      "apa": "Negarestani, R. (2008). *Cyclonopedia: Complicity with anonymous materials*. re.press.",
+      "projects": ["PX03"],
+      "topics": ["TX13", "TX02"]
+    },
+    {
+      "id": "ref-22",
+      "apa": "Nemeth, T. (2017). *Arabic type-making in the machine age: The influence of technology on the form of Arabic type, 1908–1993*. Brill.",
+      "projects": ["PX02"],
+      "topics": ["TX12"]
+    },
+    {
+      "id": "ref-23",
+      "apa": "Nova, N., & DISNOVATION.ORG. (2021). *A bestiary of the Anthropocene*. Set Margins'.",
+      "projects": ["PX03"],
+      "topics": ["TX11", "TX13"]
+    },
+    {
+      "id": "ref-24",
+      "apa": "Olomi, A. A. (Host). (2022–2023). *Head on history* [Audio podcast].",
+      "projects": ["PX03"],
+      "topics": ["TX02"]
+    },
+    {
+      "id": "ref-25",
+      "apa": "Pakzad, R. (2021, August 9). Gazing at the mother tongue [Substack newsletter]. *Humane AI*. https://royapakzad.substack.com/p/gazing-at-the-mother-tongue-854c9e89b422",
+      "projects": ["PX02"],
+      "topics": ["TX10", "TX05"]
+    },
+    {
+      "id": "ref-26",
+      "apa": "Pakzad, R. (2025). *Bilingual shadow reasoning* [Red-teaming challenge writeup]. Kaggle. https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/writeups/bilingual-shadow-reasoningred-teaming-through-cust",
+      "projects": ["PX02"],
+      "topics": ["TX10", "TX05"]
+    },
+    {
+      "id": "ref-27",
+      "apa": "Pakzad, R. (2026a, February 16). Don't trust the salt: AI summarization, multilingual safety, and the LLM guardrails that need guarding [Substack newsletter]. *Humane AI*. https://royapakzad.substack.com/p/multilingual-llm-evaluation-to-guardrails",
+      "projects": ["PX02"],
+      "topics": ["TX10", "TX05"]
+    },
+    {
+      "id": "ref-28",
+      "apa": "Pakzad, R. (2026b, October 2). Three AI agents, two countries, and one very uneven World Wide Web [Substack newsletter]. *Humane AI*. https://royapakzad.substack.com/p/multilingual-ai-agents",
+      "projects": ["PX02"],
+      "topics": ["TX10", "TX01"]
+    },
+    {
+      "id": "ref-29",
+      "apa": "Parikka, J. (2015). *A geology of media*. University of Minnesota Press.",
+      "projects": ["PX03"],
+      "topics": ["TX09", "TX07"]
+    },
+    {
+      "id": "ref-30",
+      "apa": "Robinson, F. (1993). Technology and religious change: Islam and the impact of print. *Modern Asian Studies, 27*(1), 229–251.",
+      "projects": ["PX02"],
+      "topics": ["TX12"]
+    },
+    {
+      "id": "ref-31",
+      "apa": "Said, E. W. (1978). *Orientalism*. Pantheon Books.",
+      "projects": ["PX03"],
+      "topics": ["TX02", "TX08"]
+    },
+    {
+      "id": "ref-32",
+      "apa": "Star, S. L. (1999). The ethnography of infrastructure. *American Behavioral Scientist, 43*(3), 377–391.",
+      "projects": ["PX02", "PX03"],
+      "topics": ["TX01", "TX06"]
+    },
+    {
+      "id": "ref-33",
+      "apa": "Yusoff, K. (2018). *A billion Black Anthropocenes or none*. University of Minnesota Press.",
+      "projects": ["PX03"],
+      "topics": ["TX07", "TX08"]
+    },
+    {
+      "id": "ref-34",
+      "apa": "Zaugg, I. A., Hossain, A., & Molloy, B. (2022). Digitally-disadvantaged languages. *Internet Policy Review, 11*(2).",
+      "projects": ["PX02"],
+      "topics": ["TX05", "TX08"]
+    }
   ]
 }

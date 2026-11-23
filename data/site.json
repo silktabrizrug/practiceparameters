@@ -31,11 +31,57 @@
       "id": "TX05",
       "name": "language",
       "pos": [50, 90]
+    },
+    {
+      "id": "TX06",
+      "name": "legibility",
+      "pos": [6, 22]
+    },
+    {
+      "id": "TX07",
+      "name": "extraction",
+      "pos": [6, 60]
+    },
+    {
+      "id": "TX08",
+      "name": "digital colonialism",
+      "pos": [30, 92]
+    },
+    {
+      "id": "TX09",
+      "name": "materiality",
+      "pos": [8, 82]
+    },
+    {
+      "id": "TX10",
+      "name": "AI",
+      "pos": [82, 58]
+    },
+    {
+      "id": "TX11",
+      "name": "classification",
+      "pos": [80, 76]
+    },
+    {
+      "id": "TX12",
+      "name": "script & type",
+      "pos": [80, 16]
+    },
+    {
+      "id": "TX13",
+      "name": "speculative fiction",
+      "pos": [22, 4]
+    },
+    {
+      "id": "TX14",
+      "name": "refusal",
+      "pos": [64, 6]
+    },
+    {
+      "id": "TX15",
+      "name": "commons",
+      "pos": [70, 92]
     }
   ],
-  "hideSections": [
-    "texts",
-    "people",
-    "references"
-  ]
+  "hideSections": ["people", "references"]
 }

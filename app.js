@@ -340,18 +340,24 @@
         ${p.progress != null ? `<span class="bar" title="${p.progress}%"><span style="width:${Math.max(0, Math.min(100, +p.progress))}%"></span></span>` : ''}
       </li>`).join('');
 
-    $('#texts').innerHTML = D.texts.items.map((t) => {
-      const src = safeUrl(t.cover);
-      return `<li data-topics="${esc([...(t.topics || []), ...(t.projects || [])].join(' '))}">
-        <button class="cover" data-why="${esc(t.why || '')}" aria-label="${esc(`${t.title} — ${t.author}`)}">
-          ${src ? `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()">` : ''}
-          <span class="t">${esc(t.title)}</span><span class="a">${esc(t.author)}${t.year ? ` · ${esc(t.year)}` : ''}</span>
-        </button></li>`;
-    }).join('');
-    $$('#texts .cover').forEach((c) => {
-      const show = () => { $('#why').textContent = c.dataset.why ? `// ${c.dataset.why}` : ''; };
-      c.addEventListener('mouseenter', show); c.addEventListener('focus', show); c.addEventListener('click', show);
-    });
+    const projKey = Object.fromEntries(D.projects.items.map((p) => [p.id, p.key]));
+    const apa = (t) => esc(t)
+      .replace(/\*(.+?)\*/g, '<em>$1</em>')
+      .replace(/(https?:\/\/[^\s<]+)/g, (u) => `<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\//, '').slice(0, 38)}…</a>`);
+    const texts = [...D.texts.items].sort((x, y) => (x.apa || '').localeCompare(y.apa || ''));
+    const SHOW = 8;
+    $('#texts').innerHTML = texts.map((t, i) => `
+      <li data-topics="${esc([...(t.topics || []), ...(t.projects || [])].join(' '))}"${i >= SHOW ? ' class="more-ref" hidden' : ''}>
+        <span class="refproj">${(t.projects || []).map((p) => esc(projKey[p] || p)).join('')}</span>
+        <span class="ref">${apa(t.apa || `${t.author || ''} ${t.title || ''}`)}</span>
+      </li>`).join('');
+    const mb = $('#textsMore');
+    if (mb) {
+      mb.hidden = texts.length <= SHOW;
+      const label = () => { const open = !$('#texts .more-ref')?.hidden; mb.textContent = open ? '– show fewer' : `+ ${texts.length - SHOW} more references`; mb.setAttribute('aria-expanded', String(open)); };
+      label();
+      mb.onclick = () => { const hide = !$('#texts .more-ref').hidden; $$('#texts .more-ref').forEach((li) => { li.hidden = hide; }); label(); };
+    }
 
     $('#people').innerHTML = D.people.items.map((p) => {
       const l = safeUrl(p.link);
