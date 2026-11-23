@@ -49,6 +49,7 @@
       a.href = `https://github.com/${s.repo}/edit/${s.branch || 'main'}/data/${a.dataset.file}`;
       a.target = '_blank'; a.rel = 'noopener';
     });
+    (s.hideSections || []).forEach((name) => $$(`[data-section="${name}"]`).forEach((el) => { el.hidden = true; }));
     tickConfig();
   }
 

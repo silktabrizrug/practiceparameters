@@ -1,5 +1,5 @@
 {
-  "_about": "Global settings. 'repo' powers the [edit] links (owner/name). Topic ids (TX01…) are what every other file tags with. 'pos' = where the callout sits on the map, in % of the map area [x, y].",
+  "_about": "Global settings. 'repo' powers the [edit] links (owner/name). Topic ids (TX01…) are what every other file tags with. 'pos' = where the callout sits on the map, in % of the map area [x, y]. hideSections: sections to hide (texts, people, references, progress); remove a name to show it again.",
   "title": "PRACTICE // PARAMETERS",
   "subtitle": "CERTAIN DEADLINES [VOL.1]",
   "artist": "TANDIS",
@@ -11,42 +11,32 @@
     {
       "id": "TX01",
       "name": "infrastructure",
-      "pos": [
-        14,
-        44
-      ]
+      "pos": [14, 44]
     },
     {
       "id": "TX02",
       "name": "mythology",
-      "pos": [
-        60,
-        72
-      ]
+      "pos": [60, 72]
     },
     {
       "id": "TX03",
       "name": "data visualization",
-      "pos": [
-        70,
-        44
-      ]
+      "pos": [70, 44]
     },
     {
       "id": "TX04",
       "name": "storytelling",
-      "pos": [
-        44,
-        12
-      ]
+      "pos": [44, 12]
     },
     {
       "id": "TX05",
       "name": "language",
-      "pos": [
-        50,
-        90
-      ]
+      "pos": [50, 90]
     }
+  ],
+  "hideSections": [
+    "texts",
+    "people",
+    "references"
   ]
 }
