@@ -81,6 +81,11 @@
       "id": "TX15",
       "name": "commons",
       "pos": [70, 92]
+    },
+    {
+      "id": "TX16",
+      "name": "queer theory",
+      "pos": [86, 92]
     }
   ],
   "hideSections": ["people", "references"]
