@@ -100,7 +100,7 @@
     let out = '';
     nodes().forEach((n) => {
       const p = pt(n.id); if (!p) return;
-      out += `<line data-a="${n.id}" x1="${p[0]}" y1="${p[1]}" x2="${hx}" y2="${hy}"/>`;
+      out += `<line class="${n.kind}" data-a="${n.id}" x1="${p[0]}" y1="${p[1]}" x2="${hx}" y2="${hy}"/>`;
     });
     D.projects.items.forEach((p) => (p.topics || []).forEach((t) => {
       const a = pt(p.id), b = pt(t); if (!a || !b) return;
@@ -316,6 +316,7 @@
       const on = !!f && rel.has(c.dataset.node);
       c.classList.toggle('active', c.dataset.node === f);
       c.classList.toggle('dim', !!f && !on);
+      c.classList.toggle('rel', on);
       const b = c.querySelector('.cbtn'); if (b) b.setAttribute('aria-pressed', String(c.dataset.node === f));
     });
     $$('#wires line').forEach((l) => {
