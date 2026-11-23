@@ -9,7 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' fill='none' stroke='%233358FF' stroke-width='2'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=uc1">
+<link rel="stylesheet" href="style.css?v=bg1">
+<script>
+  /* background: one of these, picked fresh on every load */
+  (function () {
+    var BG = ['#ECCA4D', '#B8AA94', '#FFA23F'];
+    document.documentElement.style.setProperty('--bg', BG[Math.floor(Math.random() * BG.length)]);
+  })();
+</script>
 </head>
 <body>
 <main class="sheet" id="sheet">
@@ -110,6 +117,6 @@
     <span class="tagline" id="tagline"></span>
   </footer>
 </main>
-<script src="app.js?v=uc1"></script>
+<script src="app.js?v=bg1"></script>
 </body>
 </html>

@@ -59,3 +59,7 @@ This repo and site are **public**. Keep recommender names, rejections you'd rath
 ## Cache-busting
 
 `index.html` loads `style.css?v=…` and `app.js?v=…`. Bump the `v=` value whenever either file changes, or browsers may keep the old one for up to 10 minutes. Data files are always fetched fresh.
+
+## Background colour
+
+On every load the page picks one of the colours in the `BG` list near the top of `index.html`. Edit that list to change them.

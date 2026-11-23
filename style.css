@@ -1,5 +1,5 @@
 :root{
-  --bg:#E3E2DD; --paper:#FFFFFF; --ink:#1E1E1E; --muted:#66655F; --faint:#A9A7A0;
+  --bg:#E3E2DD; --paper:#FFFFFF; --ink:#1E1E1E; --muted:rgba(30,30,30,.72); --faint:rgba(30,30,30,.48);
   --green:#3358FF; --green-2:#2442CC; --hit:#3358FF;
   --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
   --dmono:"DM Mono", ui-monospace, Menlo, monospace;
