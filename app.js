@@ -408,6 +408,50 @@
     });
   }
 
+
+  /* ---------- doodle layer: tiny blue pixels, gone on refresh ---------- */
+  function startDoodle() {
+    const cv = $('#doodle'), ctx = cv.getContext('2d'), btn = $('#doodleBtn'), clr = $('#doodleClear');
+    const PX = 2;
+    let on = false, down = false, last = null;
+    const color = () => getComputedStyle(document.documentElement).getPropertyValue('--green').trim() || '#3358FF';
+    function size() {
+      const w = document.documentElement.scrollWidth, h = Math.max(document.documentElement.scrollHeight, innerHeight);
+      if (cv.width === w && cv.height === h) return;
+      const keep = cv.width && cv.height ? ctx.getImageData(0, 0, cv.width, cv.height) : null;
+      cv.width = w; cv.height = h; cv.style.width = `${w}px`; cv.style.height = `${h}px`;
+      if (keep) ctx.putImageData(keep, 0, 0);
+    }
+    size();
+    new ResizeObserver(size).observe(document.body);
+    const dot = (x, y) => { ctx.fillRect(Math.floor(x / PX) * PX, Math.floor(y / PX) * PX, PX, PX); };
+    function line(a, b) {
+      const n = Math.max(1, Math.ceil(Math.hypot(b.x - a.x, b.y - a.y) / PX));
+      for (let i = 0; i <= n; i++) dot(a.x + ((b.x - a.x) * i) / n, a.y + ((b.y - a.y) * i) / n);
+    }
+    const pt = (e) => ({ x: e.pageX, y: e.pageY });
+    function set(v) {
+      on = v; document.body.classList.toggle('drawing', on);
+      btn.setAttribute('aria-pressed', String(on));
+      btn.textContent = on ? '[drawing · d / esc to stop]' : '[draw]';
+      clr.hidden = !on;
+    }
+    btn.addEventListener('click', () => set(!on));
+    clr.addEventListener('click', () => ctx.clearRect(0, 0, cv.width, cv.height));
+    cv.addEventListener('pointerdown', (e) => {
+      if (!on) return;
+      down = true; cv.setPointerCapture(e.pointerId); ctx.fillStyle = color(); last = pt(e); dot(last.x, last.y);
+    });
+    cv.addEventListener('pointermove', (e) => { if (!on || !down) return; const p = pt(e); line(last, p); last = p; });
+    const up = () => { down = false; last = null; };
+    cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+    document.addEventListener('keydown', (e) => {
+      if (e.target.closest('input,textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key === 'd' || e.key === 'D') set(!on);
+      else if (e.key === 'Escape' && on) set(false);
+    });
+  }
+
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener('click', (e) => {
@@ -440,7 +484,7 @@
 
   /* ---------- boot ---------- */
   load().then(() => {
-    renderHead(); renderMap(); renderNext(); renderExhibition(); renderProtocol(); renderRight(); renderTable(); bind(); enableDrag(); startCore();
+    renderHead(); renderMap(); renderNext(); renderExhibition(); renderProtocol(); renderRight(); renderTable(); bind(); enableDrag(); startCore(); startDoodle();
     if (location.hash.length > 1) setFocus(decodeURIComponent(location.hash.slice(1)));
     setInterval(tickConfig, 1000);
     document.fonts && document.fonts.ready.then(drawWires);

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%233358FF'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=stmt2">
+<link rel="stylesheet" href="style.css?v=doodle1">
 <script>
   /* background: one of these, picked fresh on every load */
   (function () {
@@ -122,6 +122,11 @@
     <span class="tagline" id="tagline"></span>
   </footer>
 </main>
-<script src="app.js?v=stmt2"></script>
+<canvas id="doodle" aria-hidden="true"></canvas>
+<div class="doodle-ui" id="doodleUi">
+  <button id="doodleBtn" aria-pressed="false" title="Draw on the page (D)">[draw]</button>
+  <button id="doodleClear" hidden>clear</button>
+</div>
+<script src="app.js?v=doodle1"></script>
 </body>
 </html>
