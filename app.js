@@ -3,7 +3,7 @@
 (() => {
   'use strict';
 
-  const FILES = ['site', 'projects', 'applications', 'longterm', 'progress', 'texts', 'people', 'references'];
+  const FILES = ['site', 'projects', 'applications', 'longterm', 'exhibitions', 'progress', 'texts', 'people', 'references'];
   const D = {};
   const state = { focus: null, type: 'application', showAll: false, showPast: false };
   const $ = (s, r = document) => r.querySelector(s);
@@ -213,6 +213,33 @@
     applyFocus();
   }
 
+
+  /* ---------- exhibitions ---------- */
+  function renderExhibition() {
+    const items = [...D.exhibitions.items].sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+    const next = items.find((e) => e.date && daysUntil(e.date) >= 0) || items[items.length - 1];
+    const past = items.filter((e) => e !== next && e.date && daysUntil(e.date) < 0).reverse();
+    if (!next) { $('#exhibition').innerHTML = '<p class="empty">// no exhibition planned yet</p>'; return; }
+    const [y, m, d] = (next.date || '----').split('-');
+    const done = next.tasks.filter((t) => t.done).length, n = daysUntil(next.date);
+    const meta = [next.semester, next.venue, next.time, next.course].filter(Boolean).map(esc).join(' · ');
+    $('#exhibition').innerHTML = `
+      <div class="ex" data-topics="${esc((next.topics || []).join(' '))}">
+        <div class="ex-row">
+          <span class="lhs">${esc(next.title)} =</span>
+          <span class="date"><span class="yy">${y}.</span><span class="md">${m}.${d}</span></span>
+          <span class="rhs"><span class="nm">// ${meta || 'STUDENT EXHIBITION'}</span>
+            <span class="tm">${tLabel(n)} · ${done}/${next.tasks.length} READY</span></span>
+        </div>
+        <div class="ex-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${next.tasks.length}" aria-valuenow="${done}"><span style="width:${next.tasks.length ? (done / next.tasks.length) * 100 : 0}%"></span></div>
+        <ol class="ex-tasks">${next.tasks.map((t) => {
+          const due = t.due ? ` <span class="muted">// ${esc(t.due.slice(5).replace('-', '.'))} ${tLabel(daysUntil(t.due))}</span>` : '';
+          return `<li class="${t.done ? 'done' : ''}"><i aria-hidden="true"></i>${esc(t.label)}${due}</li>`;
+        }).join('')}</ol>
+        ${past.length ? `<p class="ex-past">PAST: ${past.map((e) => `${esc(e.title)} (${esc(e.semester || e.date)})`).join(' · ')}</p>` : ''}
+      </div>`;
+  }
+
   /* ---------- long-term ---------- */
   function renderProtocol() {
     const labels = D.longterm.stepLabels;
@@ -326,7 +353,7 @@
 
   /* ---------- boot ---------- */
   load().then(() => {
-    renderHead(); renderMap(); renderNext(); renderProtocol(); renderRight(); renderTable(); bind(); startCore();
+    renderHead(); renderMap(); renderNext(); renderExhibition(); renderProtocol(); renderRight(); renderTable(); bind(); startCore();
     if (location.hash.length > 1) setFocus(decodeURIComponent(location.hash.slice(1)));
     setInterval(tickConfig, 1000);
     document.fonts && document.fonts.ready.then(drawWires);

@@ -1,8 +1,58 @@
 {
-  "_about": "Active projects. state: idea | researching | producing | editing | showing | paused. topics: which TX ids this project touches (draws the lines on the map). pos = callout position on the map in % [x, y].",
+  "_about": "Active projects. state: idea | researching | producing | editing | showing | paused. topics: which TX ids this project touches (draws the lines on the map). pos = callout position on the map in % [x, y]. state was read from the Figma files on 2026-11-23: correct it if wrong.",
   "items": [
-    { "id": "PX01", "key": "A", "name": "Substrate",        "state": null, "next": null, "topics": [], "pos": [24, 22], "link": null, "notes": null },
-    { "id": "PX02", "key": "B", "name": "Stacking Scripts", "state": null, "next": null, "topics": [], "pos": [62, 26], "link": null, "notes": null },
-    { "id": "PX03", "key": "C", "name": "Djinneology",      "state": null, "next": null, "topics": [], "pos": [30, 70], "link": null, "notes": null }
+    {
+      "id": "PX01",
+      "key": "A",
+      "name": "Substrate",
+      "state": "print layout",
+      "next": null,
+      "topics": [
+        "TX01",
+        "TX04"
+      ],
+      "pos": [
+        24,
+        22
+      ],
+      "link": null,
+      "notes": "AI as a geological + political project: land, silicon, data centers, resistance, permacomputing. Print spreads (8×8)."
+    },
+    {
+      "id": "PX02",
+      "key": "B",
+      "name": "Stacking Scripts",
+      "state": "editing (V8)",
+      "next": null,
+      "topics": [
+        "TX05",
+        "TX01",
+        "TX04"
+      ],
+      "pos": [
+        62,
+        26
+      ],
+      "link": null,
+      "notes": "Arabic script, Unicode and digital colonialism: from metal type to keyboards to platforms, as a timeline."
+    },
+    {
+      "id": "PX03",
+      "key": "C",
+      "name": "Djinneology",
+      "state": "drafting spreads",
+      "next": null,
+      "topics": [
+        "TX02",
+        "TX01",
+        "TX04"
+      ],
+      "pos": [
+        30,
+        70
+      ],
+      "link": null,
+      "notes": "An index of jinn guarding the earth’s extraction sites: copper, cobalt, lithium, quartz, bauxite."
+    }
   ]
 }

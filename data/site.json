@@ -5,13 +5,48 @@
   "artist": "TANDIS",
   "repo": "silktabrizrug/practiceparameters",
   "branch": "main",
-  "tagline": "practice in progress · 2026 → ∞",
+  "tagline": "practice in progress · 2026",
   "footer": "Powered by the studio",
   "topics": [
-    { "id": "TX01", "name": "infrastructure",     "pos": [14, 44] },
-    { "id": "TX02", "name": "mythology",          "pos": [60, 72] },
-    { "id": "TX03", "name": "data visualization", "pos": [70, 44] },
-    { "id": "TX04", "name": "storytelling",       "pos": [44, 12] },
-    { "id": "TX05", "name": "language",           "pos": [50, 90] }
+    {
+      "id": "TX01",
+      "name": "infrastructure",
+      "pos": [
+        14,
+        44
+      ]
+    },
+    {
+      "id": "TX02",
+      "name": "mythology",
+      "pos": [
+        60,
+        72
+      ]
+    },
+    {
+      "id": "TX03",
+      "name": "data visualization",
+      "pos": [
+        70,
+        44
+      ]
+    },
+    {
+      "id": "TX04",
+      "name": "storytelling",
+      "pos": [
+        44,
+        12
+      ]
+    },
+    {
+      "id": "TX05",
+      "name": "language",
+      "pos": [
+        50,
+        90
+      ]
+    }
   ]
 }

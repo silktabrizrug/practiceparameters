@@ -1,0 +1,78 @@
+{
+  "_about": "Student exhibitions, one per semester. tasks: planning checklist (done true/false, due YYYY-MM-DD or null). The next upcoming exhibition is shown large; past ones are listed below it.",
+  "items": [
+    {
+      "id": "undercurrents-fa26",
+      "title": "UNDERCURRENTS",
+      "semester": "FALL 2026",
+      "date": "2026-12-07",
+      "time": null,
+      "venue": null,
+      "course": null,
+      "link": null,
+      "topics": [],
+      "tasks": [
+        {
+          "label": "venue + date confirmed",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "student list + works",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "title + curatorial text",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "poster / graphics",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "announcement + invites",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "floor plan + install plan",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "AV + equipment list",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "wall labels + checklist",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "install",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "opening",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "documentation",
+          "due": null,
+          "done": false
+        },
+        {
+          "label": "deinstall + thank-yous",
+          "due": null,
+          "done": false
+        }
+      ]
+    }
+  ]
+}
