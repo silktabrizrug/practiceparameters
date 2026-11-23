@@ -137,7 +137,7 @@
         p.x += (p.hx - p.x) * 0.06; p.y += (p.hy - p.y) * 0.06;
         if (!reduce && Math.random() < 0.004) p.on = !p.on;
         if (!p.on) continue;
-        ctx.fillStyle = focus && p.g < 0.35 ? '#3E8E5A' : '#1E1E1E';
+        ctx.fillStyle = focus && p.g < 0.35 ? '#3358FF' : '#1E1E1E';
         ctx.fillRect(Math.round(p.x / 2) * 2, Math.round(p.y / 2) * 2, p.s, p.s);
       }
       if (!reduce) requestAnimationFrame(frame);
