@@ -37,6 +37,7 @@
     const s = D.site;
     $('#title').textContent = `# ${s.title}`;
     $('#statement').textContent = s.statement || '';
+    $('#statementWrap').setAttribute('aria-hidden', 'true');
     if (!s.statement) $('#title').removeAttribute('aria-controls');
     $('#footer').textContent = s.footer || '';
     $('#tagline').textContent = s.tagline;
@@ -415,8 +416,9 @@
     });
     $('#title').addEventListener('click', () => {
       if (!D.site.statement) return;
-      const st = $('#statement'); st.hidden = !st.hidden;
-      $('#title').setAttribute('aria-expanded', String(!st.hidden));
+      const w = $('#statementWrap'); const open = !w.classList.contains('open');
+      w.classList.toggle('open', open); w.setAttribute('aria-hidden', String(!open));
+      $('#title').setAttribute('aria-expanded', String(open));
     });
     $('#topicsBtn').addEventListener('click', (e) => {
       const lg = $('#topicLegend'); lg.hidden = !lg.hidden; e.currentTarget.setAttribute('aria-expanded', String(!lg.hidden));
@@ -430,7 +432,7 @@
     $('#showPast').addEventListener('change', (e) => { state.showPast = e.target.checked; renderTable(); });
     document.addEventListener('keydown', (e) => {
       if (e.target.closest('input,textarea')) return;
-      if (e.key === 'Escape') { setFocus(null); $('#statement').hidden = true; $('#title').setAttribute('aria-expanded', 'false'); }
+      if (e.key === 'Escape') { setFocus(null); $('#statementWrap').classList.remove('open'); $('#statementWrap').setAttribute('aria-hidden', 'true'); $('#title').setAttribute('aria-expanded', 'false'); }
       const i = Number(e.key);
       if (i >= 1 && i <= D.site.topics.length) setFocus(D.site.topics[i - 1].id);
     });
