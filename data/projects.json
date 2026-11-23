@@ -11,11 +11,8 @@
         "TX01",
         "TX04"
       ],
-      "pos": [
-        24,
-        22
-      ],
-      "link": null,
+      "pos": [24, 22],
+      "link": "https://www.figma.com/design/tvTaOTUt4jGaCcNpSrOj9E/CAS---2026",
       "notes": "AI as a geological + political project: land, silicon, data centers, resistance, permacomputing. Print spreads (8×8)."
     },
     {
@@ -29,11 +26,8 @@
         "TX01",
         "TX04"
       ],
-      "pos": [
-        62,
-        26
-      ],
-      "link": null,
+      "pos": [62, 26],
+      "link": "https://www.figma.com/design/RioLh4YUZcES3to0pZwpJ6/Digital-Square?node-id=405-213",
       "notes": "Arabic script, Unicode and digital colonialism: from metal type to keyboards to platforms, as a timeline."
     },
     {
@@ -47,11 +41,8 @@
         "TX01",
         "TX04"
       ],
-      "pos": [
-        30,
-        70
-      ],
-      "link": null,
+      "pos": [22, 72],
+      "link": "https://www.figma.com/design/P5g0AQb450gYPY6ykYTzyX/Djinneology",
       "notes": "An index of jinn guarding the earth’s extraction sites: copper, cobalt, lithium, quartz, bauxite."
     }
   ]

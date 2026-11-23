@@ -76,13 +76,14 @@
 
   function renderMap() {
     const wrap = $('#callouts');
-    wrap.innerHTML = nodes().map((n) => `
-      <button class="callout ${n.kind}${n.pos[0] > 58 ? ' flip' : ''}" data-focus="${esc(n.id)}" data-node="${esc(n.id)}"
-        style="left:${n.pos[0]}%;top:${n.pos[1]}%" aria-pressed="false">
-        <span class="box"></span><span class="lab">${esc(n.label)}</span>
-        ${n.meta ? `<span class="meta">${esc(n.meta)}</span>` : ''}
+    wrap.innerHTML = nodes().map((n) => {
+      const link = safeUrl(n.link);
+      return `<div class="callout ${n.kind}" data-node="${esc(n.id)}" style="left:${n.pos[0]}%;top:${n.pos[1]}%">
+        <button class="cbtn" data-focus="${esc(n.id)}" aria-pressed="false"><span class="box"></span><span class="lab">${esc(n.label)}</span></button>
+        ${n.meta || link ? `<span class="meta">${n.meta ? esc(n.meta) : ''}${link ? `${n.meta ? ' · ' : ''}<a href="${esc(link)}" target="_blank" rel="noopener">figma ↗</a>` : ''}</span>` : ''}
         <span class="cid">${esc(n.id)}</span>
-      </button>`).join('');
+      </div>`;
+    }).join('');
     drawWires();
   }
 
@@ -314,7 +315,7 @@
       const on = !!f && rel.has(c.dataset.node);
       c.classList.toggle('active', c.dataset.node === f);
       c.classList.toggle('dim', !!f && !on);
-      c.setAttribute('aria-pressed', String(c.dataset.node === f));
+      const b = c.querySelector('.cbtn'); if (b) b.setAttribute('aria-pressed', String(c.dataset.node === f));
     });
     $$('#wires line').forEach((l) => {
       const on = !!f && (rel.has(l.dataset.a) || rel.has(l.dataset.b));
