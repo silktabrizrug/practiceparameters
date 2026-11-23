@@ -1,10 +1,10 @@
 {
-  "_about": "Texts, as an APA 7 reference list (alphabetical). apa: the full reference; wrap titles in *asterisks* for italics. projects / topics: tags used by the map filter. Sources: Stacking Scripts prospectus bibliography + Jinneology Index preliminary bibliography.",
+  "_about": "Texts, as an APA 7 reference list (alphabetical). apa: the full reference; wrap titles in *asterisks* for italics. projects / topics: tags used by the map filter. Sources: the Substrate, Stacking Scripts and Jinneology Index prospectus bibliographies.",
   "items": [
     {
       "id": "ref-01",
       "apa": "Agarwal, D., Naaman, M., & Vashistha, A. (2025). AI suggestions homogenize writing toward Western styles and diminish cultural nuances. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3706598.3713564",
-      "projects": ["PX02"],
+      "projects": ["PX01", "PX02"],
       "topics": ["TX10", "TX05"]
     },
     {
@@ -22,7 +22,7 @@
     {
       "id": "ref-04",
       "apa": "Crawford, K. (2021). *Atlas of AI: Power, politics, and the planetary costs of artificial intelligence*. Yale University Press.",
-      "projects": ["PX03"],
+      "projects": ["PX01", "PX03"],
       "topics": ["TX10", "TX07", "TX09"]
     },
     {
@@ -45,13 +45,13 @@
     },
     {
       "id": "ref-08",
-      "apa": "Faruki, M. (2017). *Intake facility for an anonymous client* [Architectural project].",
+      "apa": "Faruki, M. (2017). *Intake facility for an anonymous client* [Art project].",
       "projects": ["PX03"],
       "topics": ["TX13"]
     },
     {
       "id": "ref-09",
-      "apa": "Ghosn, R., & Jazairy, E. H. (2016). *After oil*.",
+      "apa": "Ghosn, R., & Jazairy, E. H. (2016). *After oil* [Art project].",
       "projects": ["PX03"],
       "topics": ["TX13", "TX07"]
     },
@@ -111,13 +111,13 @@
     },
     {
       "id": "ref-19",
-      "apa": "Meindertsma, C., & Joliat, J. (2006). *PIG 05049*.",
+      "apa": "Meindertsma, C., & Joliat, J. (2006). *PIG 05049* [Art project].",
       "projects": ["PX03"],
       "topics": ["TX03", "TX07"]
     },
     {
       "id": "ref-20",
-      "apa": "Mogel, L. (2018). *Walking the watershed*.",
+      "apa": "Mogel, L. (2018). *Walking the watershed* [Art project].",
       "projects": ["PX03"],
       "topics": ["TX03", "TX01"]
     },
@@ -204,6 +204,114 @@
       "apa": "Zaugg, I. A., Hossain, A., & Molloy, B. (2022). Digitally-disadvantaged languages. *Internet Policy Review, 11*(2).",
       "projects": ["PX02"],
       "topics": ["TX05", "TX08"]
+    },
+    {
+      "id": "ref-35",
+      "apa": "Abraham, Y. (2024, April 3). ‘Lavender’: The AI machine directing Israel’s bombing spree in Gaza. *+972 Magazine*.",
+      "projects": ["PX01"],
+      "topics": ["TX10"]
+    },
+    {
+      "id": "ref-36",
+      "apa": "Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016, May 23). Machine bias. *ProPublica*.",
+      "projects": ["PX01"],
+      "topics": ["TX10", "TX11"]
+    },
+    {
+      "id": "ref-37",
+      "apa": "Arendt, H. (1951). *The origins of totalitarianism*. Harcourt, Brace.",
+      "projects": ["PX01"],
+      "topics": ["TX08"]
+    },
+    {
+      "id": "ref-38",
+      "apa": "Barlow, J. P. (1996). *A declaration of the independence of cyberspace*. Electronic Frontier Foundation.",
+      "projects": ["PX01"],
+      "topics": ["TX04"]
+    },
+    {
+      "id": "ref-39",
+      "apa": "Buolamwini, J., & Gebru, T. (2018). Gender shades: Intersectional accuracy disparities in commercial gender classification. *Proceedings of Machine Learning Research, 81*, 77–91.",
+      "projects": ["PX01"],
+      "topics": ["TX10", "TX11"]
+    },
+    {
+      "id": "ref-40",
+      "apa": "Campolo, A., & Crawford, K. (2020). Enchanted determinism: Power without responsibility in artificial intelligence. *Engaging Science, Technology, and Society, 6*, 1–19.",
+      "projects": ["PX01"],
+      "topics": ["TX10", "TX04"]
+    },
+    {
+      "id": "ref-41",
+      "apa": "Césaire, A. (2000). *Discourse on colonialism* (J. Pinkham, Trans.). Monthly Review Press. (Original work published 1950)",
+      "projects": ["PX01"],
+      "topics": ["TX08"]
+    },
+    {
+      "id": "ref-42",
+      "apa": "Crawford, K., & Paglen, T. (2019). *Excavating AI: The politics of images in machine learning training sets*. https://excavating.ai",
+      "projects": ["PX01"],
+      "topics": ["TX11", "TX10"]
+    },
+    {
+      "id": "ref-43",
+      "apa": "Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., & Fei-Fei, L. (2009). ImageNet: A large-scale hierarchical image database. *2009 IEEE Conference on Computer Vision and Pattern Recognition*, 248–255.",
+      "projects": ["PX01"],
+      "topics": ["TX11", "TX10"]
+    },
+    {
+      "id": "ref-44",
+      "apa": "Dratsch, T., Chen, X., Rezazade Mehrizi, M., Kloeckner, R., Mähringer-Kunz, A., Püsken, M., Baeßler, B., Sauer, S., Maintz, D., & Pinto dos Santos, D. (2023). Automation bias in mammography: The impact of artificial intelligence BI-RADS suggestions on reader performance. *Radiology, 307*(4), e222176.",
+      "projects": ["PX01"],
+      "topics": ["TX10"]
+    },
+    {
+      "id": "ref-45",
+      "apa": "Fox, S. E., Shorey, S., Kang, E. Y., Montiel Valle, D., & Rodriguez, E. (2023). Patchwork: The hidden, human labor of AI integration within essential work. *Proceedings of the ACM on Human-Computer Interaction, 7*(CSCW1).",
+      "projects": ["PX01"],
+      "topics": ["TX10"]
+    },
+    {
+      "id": "ref-46",
+      "apa": "Gray, M. L., & Suri, S. (2019). *Ghost work: How to stop Silicon Valley from building a new global underclass*. Houghton Mifflin Harcourt.",
+      "projects": ["PX01"],
+      "topics": ["TX10", "TX07"]
+    },
+    {
+      "id": "ref-47",
+      "apa": "Hao, K. (2025). *Empire of AI: Dreams and nightmares in Sam Altman’s OpenAI*. Penguin Press.",
+      "projects": ["PX01"],
+      "topics": ["TX10", "TX08"]
+    },
+    {
+      "id": "ref-48",
+      "apa": "Jakesch, M., Bhat, A., Buschek, D., Zalmanson, L., & Naaman, M. (2023). Co-writing with opinionated language models affects users’ views. *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*.",
+      "projects": ["PX01"],
+      "topics": ["TX10", "TX05"]
+    },
+    {
+      "id": "ref-49",
+      "apa": "Kaba, M. (2021). *We do this ’til we free us: Abolitionist organizing and transforming justice*. Haymarket Books.",
+      "projects": ["PX01"],
+      "topics": ["TX14"]
+    },
+    {
+      "id": "ref-50",
+      "apa": "Meadows, D. H., Meadows, D. L., Randers, J., & Behrens, W. W., III. (1972). *The limits to growth*. Universe Books.",
+      "projects": ["PX01"],
+      "topics": ["TX09"]
+    },
+    {
+      "id": "ref-51",
+      "apa": "Sano-Franchini, J., McIntyre, M., & Fernandes, M. (2024). *Refusing GenAI in writing studies: A quickstart guide*.",
+      "projects": ["PX01"],
+      "topics": ["TX14", "TX10"]
+    },
+    {
+      "id": "ref-52",
+      "apa": "Shumailov, I., Shumaylov, Z., Zhao, Y., Papernot, N., Anderson, R., & Gal, Y. (2024). AI models collapse when trained on recursively generated data. *Nature, 631*, 755–759.",
+      "projects": ["PX01"],
+      "topics": ["TX10"]
     }
   ]
 }
