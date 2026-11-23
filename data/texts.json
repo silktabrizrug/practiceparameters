@@ -23,7 +23,7 @@
       "id": "ref-04",
       "apa": "Crawford, K. (2021). *Atlas of AI: Power, politics, and the planetary costs of artificial intelligence*. Yale University Press.",
       "projects": ["PX01", "PX03"],
-      "topics": ["TX10", "TX07", "TX09"]
+      "topics": ["TX07", "TX09", "TX10", "TX17"]
     },
     {
       "id": "ref-05",
@@ -77,7 +77,7 @@
       "id": "ref-13",
       "apa": "Kara, S. (2023). *Cobalt red: How the blood of the Congo powers our lives*. St. Martin's Press.",
       "projects": ["PX03"],
-      "topics": ["TX07"]
+      "topics": ["TX07", "TX17"]
     },
     {
       "id": "ref-14",
@@ -269,13 +269,13 @@
       "id": "ref-45",
       "apa": "Fox, S. E., Shorey, S., Kang, E. Y., Montiel Valle, D., & Rodriguez, E. (2023). Patchwork: The hidden, human labor of AI integration within essential work. *Proceedings of the ACM on Human-Computer Interaction, 7*(CSCW1).",
       "projects": ["PX01"],
-      "topics": ["TX10"]
+      "topics": ["TX10", "TX17"]
     },
     {
       "id": "ref-46",
       "apa": "Gray, M. L., & Suri, S. (2019). *Ghost work: How to stop Silicon Valley from building a new global underclass*. Houghton Mifflin Harcourt.",
       "projects": ["PX01"],
-      "topics": ["TX10", "TX07"]
+      "topics": ["TX07", "TX10", "TX17"]
     },
     {
       "id": "ref-47",

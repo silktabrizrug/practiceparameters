@@ -86,6 +86,11 @@
       "id": "TX16",
       "name": "queer theory",
       "pos": [86, 92]
+    },
+    {
+      "id": "TX17",
+      "name": "labor",
+      "pos": [90, 36]
     }
   ],
   "hideSections": ["people", "references"]

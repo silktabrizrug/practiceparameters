@@ -7,7 +7,7 @@
       "name": "Substrate",
       "state": "print layout",
       "next": null,
-      "topics": ["TX01", "TX04", "TX07", "TX09", "TX10", "TX14", "TX15", "TX11"],
+      "topics": ["TX01", "TX04", "TX07", "TX09", "TX10", "TX14", "TX15", "TX11", "TX17"],
       "pos": [24, 22],
       "link": "https://www.figma.com/design/tvTaOTUt4jGaCcNpSrOj9E/CAS---2026",
       "notes": "AI as a geological + political project: land, silicon, data centers, resistance, permacomputing. Print spreads (8×8)."
@@ -29,7 +29,7 @@
       "name": "Djinneology",
       "state": "drafting spreads",
       "next": null,
-      "topics": ["TX02", "TX01", "TX04", "TX06", "TX07", "TX08", "TX09", "TX10", "TX11", "TX13", "TX14", "TX16"],
+      "topics": ["TX02", "TX01", "TX04", "TX06", "TX07", "TX08", "TX09", "TX10", "TX11", "TX13", "TX14", "TX16", "TX17"],
       "pos": [22, 72],
       "link": "https://www.figma.com/design/P5g0AQb450gYPY6ykYTzyX/Djinneology",
       "notes": "An index of jinn guarding the earth’s extraction sites: copper, cobalt, lithium, quartz, bauxite."
