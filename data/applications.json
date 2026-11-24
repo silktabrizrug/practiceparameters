@@ -1,6 +1,6 @@
 {
   "_about": "Short-term applications + events. Synced from the Applications & Events Tracker. status: to-review | interested | applying | submitted | going | accepted | rejected | missed | not-for-me. date: YYYY-MM-DD or null.",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "items": [
     {
       "id": "study-corps-nyc-2027",
@@ -8,7 +8,7 @@
       "type": "application",
       "date": "2026-11-22",
       "dateLabel": "Deadline",
-      "status": "to-review",
+      "status": "missed",
       "where": "NYC",
       "money": "Paid role",
       "link": "https://www.instagram.com/schoolofattention/",
@@ -471,6 +471,106 @@
       "source": null,
       "notes": "My students' exhibition for this semester. Planning checklist in the Exhibition Protocol.",
       "topics": [],
+      "projects": []
+    },
+    {
+      "id": "ehin-artist-residencies-european-hybrid-intelligence-network",
+      "name": "EHIN Artist Residencies (European Hybrid Intelligence Network)",
+      "type": "application",
+      "date": "2026-12-04",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": "Europe (6 residencies)",
+      "money": "€25,000 + research/production support",
+      "link": "https://www.instagram.com/pformart/",
+      "source": "@pformart",
+      "notes": "Living systems, biocomputing, art-science. EU citizens/residents only.",
+      "topics": [
+        "TX09",
+        "TX10"
+      ],
+      "projects": []
+    },
+    {
+      "id": "amdocs-film-festival-grants",
+      "name": "AmDocs Film Festival grants",
+      "type": "application",
+      "date": "2026-12-13",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": null,
+      "money": "Up to $50K + post-production support",
+      "link": "https://www.instagram.com/spike_johnson/",
+      "source": "@spike_johnson",
+      "notes": "Documentary, animation and music films, short and feature. A commenter says it's a live pitch competition, not an open grant; verify before applying.",
+      "topics": [
+        "TX04"
+      ],
+      "projects": []
+    },
+    {
+      "id": "daad-artists-in-berlin-program-2028",
+      "name": "DAAD Artists-in-Berlin Program 2028",
+      "type": "application",
+      "date": "2026-12-15",
+      "dateLabel": "Deadline (23:59 CET)",
+      "status": "to-review",
+      "where": "Berlin",
+      "money": "Monthly stipend, housing, travel",
+      "link": "https://www.instagram.com/pformart/",
+      "source": "@pformart",
+      "notes": "Established international artists in film (6 mo), literature and music & sound (12 mo). Visual arts fellowships are nomination-only.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "bibliothek-andreas-zust-studio-residency-2027",
+      "name": "Bibliothek Andreas Züst Studio Residency 2027",
+      "type": "application",
+      "date": "2026-12-15",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": "Oberegg, Switzerland",
+      "money": "Housing, meals, travel + CHF 750 on request",
+      "link": "https://www.instagram.com/pformart/",
+      "source": "@pformart",
+      "notes": "Duos/collectives of 2–5, any discipline; projects should engage the library and its collections. Residency Jul 4 – Aug 15, 2027.",
+      "topics": [
+        "TX11"
+      ],
+      "projects": []
+    },
+    {
+      "id": "48-stunden-neukolln-2027-official-festival-contributions",
+      "name": "48 Stunden Neukölln 2027: official festival contributions",
+      "type": "application",
+      "date": "2027-01-10",
+      "dateLabel": "Deadline",
+      "status": "to-review",
+      "where": "Berlin-Neukölln",
+      "money": "Free; permits + print materials",
+      "link": "https://www.instagram.com/pformart/",
+      "source": "@pformart",
+      "notes": "Theme: Soft Rituals. Festival Jun 25–27, 2027. Any discipline, any place of residence, no fee.",
+      "topics": [],
+      "projects": []
+    },
+    {
+      "id": "eyebeam-agency-residency-2027",
+      "name": "Eyebeam Agency Residency 2027",
+      "type": "application",
+      "date": "2026-11-15",
+      "dateLabel": "Deadline",
+      "status": "missed",
+      "where": "NYC",
+      "money": "$5,000 stipend",
+      "link": "https://www.instagram.com/pformart/",
+      "source": "@pformart",
+      "notes": "12 weeks on agency, power, technology and collective action; 6 NYC-based artists. Watch for the next round.",
+      "topics": [
+        "TX10",
+        "TX15"
+      ],
       "projects": []
     }
   ]
