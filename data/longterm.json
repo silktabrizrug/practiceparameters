@@ -91,6 +91,18 @@
       "topics": ["TX01", "TX03", "TX06"],
       "steps": [false, false, false, false, false],
       "notes": "The site loads as Forensis, the Berlin association founded by Forensic Architecture. FA has no formal internship programme; it hosts placements from Goldsmiths' MA in Research Architecture and occasionally hires research assistants (listed on forensic-architecture.org/about/jobs and the Goldsmiths jobs portal)."
+    },
+    {
+      "id": "berlin-prize",
+      "school": "AMERICAN ACADEMY",
+      "program": "BERLIN PRIZE 2028–29",
+      "deadline": null,
+      "opens": "2027-07-01",
+      "deadlineNote": "2027–28 closed Sep 25, 2026 · 2028–29 opens Jul 2027, due ≈ late Sep 2027 (est.) · visual artists: nomination only",
+      "link": "https://www.americanacademy.de/fellowship-application/",
+      "topics": [],
+      "steps": [false, false, false, false, false],
+      "notes": "One semester (~4 months) at the Hans Arnhold Center, Berlin. $5,000/month + airfare, housing, partial board. US citizens / permanent residents. Open application is for scholars and writers (PhD or published book); visual artists come in through a separate nomination-based competition. Apply via SlideRoom: 1,500–1,750-word proposal, CV, 2 writing samples, 3 referees."
     }
   ]
 }
